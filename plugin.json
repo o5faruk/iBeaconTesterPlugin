@@ -1,0 +1,20 @@
+{
+  "author": "Buildfire",
+  "pluginName": "iBeacon tester [Faruk]",
+  "pluginDescription": "iBeacon tester plugin",
+  "supportEmail": "support@buildfire.com",
+  "control": {
+    "content": {
+      "enabled": false
+    },
+    "design": {
+      "enabled": false
+    },
+    "settings": {
+      "enabled": false
+    }
+  },
+  "widget": {},
+  "features": [{ "name": "iBeacon" }],
+  "languages": ["en"]
+}

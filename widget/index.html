@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="../../../scripts/buildfire.js"></script>
+
+    <script src="../../../scripts/buildfire/services/bluetooth/iBeacon.js"></script>
+    <script src="../../../scripts/buildfire/services/notifications/localNotifications.js"></script>
+    <script src="./ui.js"></script>
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="padded">
+      <h3>iBeacon Tester</h3>
+
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter iBeacon UUID</label>
+        <input
+          class="form-control"
+          id="uuid"
+          type="text"
+          value="FDA50693-A4E2-4FB1-AFCF-C6EB07647825"
+          onchange="setBeaconRegion()"
+        />
+      </div>
+      <button
+        id="startMonitoringBtn"
+        class="btn btn-success"
+        onclick="startMonitoring(testingBeaconRegion)"
+      >
+        Start Monitoring Selected iBeacon
+      </button>
+      <button
+        id="stopMonitoringBtn"
+        class="btn btn-danger"
+        onclick="stopMonitoring(testingBeaconRegion)"
+        style="display: none;"
+      >
+        Stop Monitoring Selected iBeacon
+      </button>
+      <br />
+      <button
+        id="startRangingBtn"
+        class="btn btn-success"
+        onclick="startRanging(testingBeaconRegion)"
+      >
+        Start Ranging Selected iBeacon
+      </button>
+      <button
+        id="stopRangingBtn"
+        class="btn btn-danger"
+        onclick="stopRanging(testingBeaconRegion)"
+        style="display: none;"
+      >
+        Stop Ranging Selected iBeacon
+      </button>
+      <button id="clearLogs" class="btn btn-success" onclick="clearLogs()">
+        Clear logs
+      </button>
+
+      <div id="divLog">
+        <p id="actionLogsP" style="display: none;">Action Logs:</p>
+      </div>
+
+      <script src="./index.js"></script>
+    </div>
+  </body>
+</html>

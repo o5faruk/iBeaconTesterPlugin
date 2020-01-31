@@ -1,0 +1,20 @@
+#divLog {
+  overflow: scroll;
+  white-space: normal;
+}
+
+.btn-success,
+.btn-danger {
+  margin-bottom: 15px;
+  width: 90%;
+}
+
+input[type="text"] {
+  width: 90%;
+}
+
+.alert {
+  width: 90%;
+  margin-bottom: 15px;
+  overflow-wrap: break-word;
+}
